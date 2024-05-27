@@ -1,0 +1,17 @@
+{
+  "name": "carrieredge-login",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "@cucumber/cucumber": "^7.3.2",
+    "selenium-webdriver": "^4.0.0"
+  }
+}
