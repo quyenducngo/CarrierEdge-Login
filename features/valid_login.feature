@@ -4,3 +4,4 @@ Feature: CarriersEdge Valid Login
     Given I launch the Chrome browser
     When I navigate to the login page
     And I enter a valid username and password
+    Then I should see dashboard page
