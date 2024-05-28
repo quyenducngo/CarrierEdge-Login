@@ -2,7 +2,7 @@ const { Builder, By, until } = require('selenium-webdriver');
 const { Given, When, Then, setDefaultTimeout } = require('@cucumber/cucumber');
 const { expect } = require('chai');
 
-setDefaultTimeout(60 * 1000); // Set default timeout to 60 seconds
+setDefaultTimeout(10 * 1000); // Set default timeout to 60 seconds
 
 let driver;
 
@@ -38,10 +38,6 @@ When('I enter an invalid username and password', async function () {
 });
 
 // Then('I should see the dashboard page', async function () {
-//   // Assuming dashboard page has a specific element to verify successful login
-//   const dashboardElement = await driver.wait(until.elementLocated(By.id('dashboardElementId')), 10000);
-//   expect(await dashboardElement.isDisplayed()).to.be.true;
-//   await driver.quit();
 // });
 
 Then('I should see a login error message', async function () {
